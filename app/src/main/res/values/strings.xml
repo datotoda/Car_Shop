@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Car Shop</string>
+
+    <string name="image_link">Image Link</string>
+    <string name="description">Description</string>
+    <string name="car_manufacturer">Car Manufacturer</string>
+    <string name="owner_full_name">Owner Full Name</string>
+    <string name="pick_from_contacts">Pick From Contacts</string>
+    <string name="saved">Saved!</string>
+    <string name="owner">Owner</string>
+    <string name="restore_list">Restore List</string>
+</resources>

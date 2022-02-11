@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/carListFragment">
+
+    <fragment
+        android:id="@+id/carListFragment"
+        android:name="com.datotoda.carshop.fragments.list.CarListFragment"
+        android:label="Cars"
+        tools:layout="@layout/fragment_car_list" >
+        <action
+            android:id="@+id/action_carListFragment_to_addCarFragment"
+            app:destination="@id/addCarFragment" />
+        <action
+            android:id="@+id/action_carListFragment_to_updateCarFragment"
+            app:destination="@id/updateCarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCarFragment"
+        android:name="com.datotoda.carshop.fragments.add.AddCarFragment"
+        android:label="Add Car"
+        tools:layout="@layout/fragment_add_car" />
+    <fragment
+        android:id="@+id/updateCarFragment"
+        android:name="com.datotoda.carshop.fragments.update.UpdateCarFragment"
+        android:label="Edit Car"
+        tools:layout="@layout/fragment_update_car" >
+        <argument
+            android:name="editCar"
+            app:argType="com.datotoda.carshop.model.Car" />
+    </fragment>
+</navigation>
